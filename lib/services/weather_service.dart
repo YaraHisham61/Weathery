@@ -18,7 +18,6 @@ class WeatherService {
           e.response?.data['error']['message'] ?? 'oops something went wrong';
       throw Exception(errorMessage);
     } catch (e) {
-      print(e.toString());
       throw Exception('oops something went wrong');
     }
   }
